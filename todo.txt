@@ -1,0 +1,15 @@
+- Devising the controls
+
+	- Use S-Space to generate unigram and bigram word spaces
+	
+	- Run test set through it to generate the vectors
+		- Output a matrix of these vectors
+		- Add the class labels as the last column
+
+	- Use WEKA to train a NB and SVM from each of these spaces
+		- Sift through the RNTN training params and replicate them as closely as possible, noting divergences
+
+- Estimate model accuracies
+	- Use labeled.txt and splitDict.txt to generate testTweets.txt
+	- Run it through all da models
+	- Load each such vector in R and measure model accuracies
